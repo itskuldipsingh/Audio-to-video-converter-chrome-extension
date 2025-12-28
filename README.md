@@ -4,8 +4,14 @@ A 100% local Chrome Extension that converts audio files and background images in
 
 ## Features
 - **Privacy:** No data is uploaded to any server. Everything happens in your browser.
-- **Fast:** Uses the local machine's GPU/CPU.
 - **Visuals:** Displays a real-time progress bar and time-remaining countdown.
+
+## ⏱️ Real-Time Conversion
+Unlike cloud-based converters that process files on a server, this extension performs **Real-Time Encoding**. 
+
+- **How it works:** The extension plays the audio through a virtualized Web Audio pipeline while simultaneously capturing the canvas frames.
+- **Duration:** If your audio is 3 minutes long, the conversion will take approximately 3 minutes.
+- **Stability:** By processing in real-time locally, we ensure the highest synchronization between the audio and the background image without losing frames.
 
 ## Installation
 1. Download this repository as a ZIP file and extract it.
