@@ -2,6 +2,10 @@
 
 A 100% local Chrome Extension that converts audio files and background images into video files using the browser's MediaRecorder API.
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0-green.svg)
+![Privacy](https://img.shields.io/badge/privacy-100%25%20Local-orange.svg)
+
 ## Features
 - **Privacy:** No data is uploaded to any server. Everything happens in your browser.
 - **Visuals:** Displays a real-time progress bar and time-remaining countdown.
