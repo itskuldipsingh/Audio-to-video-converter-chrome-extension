@@ -25,3 +25,7 @@ Unlike cloud-based converters that process files on a server, this extension per
 2. Select your audio file and background image.
 3. Click **Start Conversion**.
 4. Keep the worker tab open until the "Save As" window appears.
+
+## Credits
+- Built using the [MediaRecorder API](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder)
+- UI designed with standard HTML5/CSS3
