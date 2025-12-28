@@ -2,8 +2,12 @@
   "manifest_version": 3,
   "name": "Audio to Video Converter",
   "version": "1.0",
-  "permissions": ["storage", "downloads"],
+  "description": "Local audio-to-video conversion with real-time countdown.",
+  "permissions": ["downloads", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Open Audio Converter"
   }
 }
