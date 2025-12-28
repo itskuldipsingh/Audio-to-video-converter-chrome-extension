@@ -1,8 +1,48 @@
 <!DOCTYPE html>
 <html>
-<body style="width: 200px; padding: 15px; text-align: center; font-family: sans-serif;">
-  <h3>Converter</h3>
-  <button id="btn" style="padding: 10px; width: 100%; cursor: pointer;">Open Converter</button>
+<head>
+  <title>Audio to Video Converter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Audio to Video</h2>
+    <p class="subtitle">100% Local Encoding</p>
+
+    <div class="input-group">
+      <label>1. Audio File (MP3/WAV)</label>
+      <input type="file" id="audioInput" accept="audio/*">
+    </div>
+
+    <div class="input-group">
+      <label>2. Background Image (JPG/PNG)</label>
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+
+    <div class="input-group">
+      <label>3. Output Format</label>
+      <select id="formatSelect">
+        <option value="video/mp4">MP4 (Recommended)</option>
+        <option value="video/webm">WebM (VP9)</option>
+      </select>
+    </div>
+
+    <canvas id="recordCanvas" width="1280" height="720" style="display:none;"></canvas>
+    
+    <button id="convertBtn">Start Conversion</button>
+    
+    <div id="status"> </div>
+    
+    <div class="timer-container">
+      <span id="timer">Remaining: 00:00</span>
+    </div>
+
+    <progress id="progressBar" value="0" max="100" style="display:none;"></progress>
+    
+    <div class="info">
+      <strong>How it works:</strong> The audio is routed internally to the video recorder. Your speakers will remain silent during the process.
+    </div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
