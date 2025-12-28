@@ -17,6 +17,16 @@ Unlike cloud-based converters that process files on a server, this extension per
 - **Duration:** If your audio is 3 minutes long, the conversion will take approximately 3 minutes.
 - **Stability:** By processing in real-time locally, we ensure the highest synchronization between the audio and the background image without losing frames.
 
+## Project Structure
+```
+.
+├── background.js
+├── manifest.json
+├── popup.css
+├── popup.html
+└── popup.js
+```
+
 ## Installation
 1. Download this repository as a ZIP file and extract it.
 2. Open Google Chrome and go to `chrome://extensions`.
